@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .input {
+    @apply border border-white w-full rounded-full py-2 outline-none px-4 focus:ring-2 focus:border-transparent focus:ring-white/80 bg-transparent placeholder:text-white;
+  }
+
+  .input-label {
+    @apply text-white block pb-1 text-shadow;
+  }
+}
+
+@layer components {
+  .primary-btn {
+    @apply bg-gradient-to-r from-primary to-secondary text-white py-2 px-5 rounded-full mt-7 block w-full hover:bg-gradient-to-r hover:from-secondary hover:to-primary hover:scale-105 transition-all duration-300 shadow-custom-inset;
+  }
+  .glowing-shadow {
+    @apply shadow-[0px_0px_40px_10px_#d2e6ff,inset_0px_0px_40px_10px_#d2e6ff];
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 2px #1128015b;
+  }
+}
